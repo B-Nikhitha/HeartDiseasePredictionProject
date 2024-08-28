@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .cont{
+                text-align: center;
+                background-color: aliceblue;
+            }
+            .incont{
+                text-align: left;
+                margin-left: 650px;
+            }
+            .incont input {
+                display: block;
+              }
+            .pred{
+                margin-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <h1>Heart Disease Prediction</h1>
+            <form method="POST" action='/predict' class="incont">
+            <label>Age</label>
+            <input type="text" name="f1">
+            <br/>
+            <br/>
+            <label>Gender(Male:1,Female:0)</label>
+            <input type="text" name="f2">
+            <br/>
+            <br/>
+            <label>Cholesterol</label>
+            <input type="text" name="f3">
+            <br/>
+            <br/>
+            <label>Blood Pressure</label>
+            <input type="text" name="f4">
+            <br/>
+            <br/>
+            <label>Heart Rate</label>
+            <input type="text" name="f5">
+            <br/>
+            <br/>
+            <label>Smoking(Never:0,Former:1,Current:2)</label>
+            <input type="text" name="f6">
+            <br/>
+            <br/>
+            <label>Alcohol Intake(None:0,Moderate:1,Heavy:2)</label>
+            <input type="text" name="f7">
+            <br/>
+            <br/>
+            <label>Exercise Hours</label>
+            <input type="text" name="f8">
+            <br/>
+            <br/>
+            <label>Family History(Yes:1,No:0)</label>
+            <input type="text" name="f9">
+            <br/>
+            <br/>
+            <label>Diabetes(Yes:1,No:0)</label>
+            <input type="text" name="f10">
+            <br/>
+            <br/>
+            <label>Obesity(Yes:1,No:0)</label>
+            <input type="text" name="f11">
+            <br/>
+            <br/>
+            <label>Stress Level(1-10)</label>
+            <input type="text" name="f12">
+            <br/>
+            <br/>
+            <label>Blood Sugar</label>
+            <input type="text" name="f13">
+            <br/>
+            <br/>
+            <label>Exercise Induced Angina(Yes:1,No:0)</label>
+            <input type="text" name="f14">
+            <br/>
+            <br/>
+            <label>Chest Pain Type(Typical Angina:0,Atypical Angina:1,Non-anginal Pain:2,Asymptomatic:3)</label>
+            <input type="text" name="f15">
+            <br/>
+            <br/>
+            <input type="submit" value="predict" class="pred">
+            <br/>
+            <br/>
+            <label>Class : {{result}}</label>
+            </form>
+        </div>
+    </body>
+</html>
