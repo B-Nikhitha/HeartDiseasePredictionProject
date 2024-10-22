@@ -11,7 +11,7 @@ def home():
     result=''
     return render_template('templates/index.html',**locals())
 
-@app.route('/predict',methods=['POST','GET'])
+@app.route('templates/index.html',methods=['POST','GET'])
 def predict():
     d1=float(request.form['f1'])
     d2=float(request.form['f2'])
