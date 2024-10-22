@@ -9,7 +9,7 @@ app=Flask(__name__)
 @app.route('/')
 def home():
     result=''
-    return render_template('index.html',**locals())
+    return render_template('templates/index.html',**locals())
 
 @app.route('/predict',methods=['POST','GET'])
 def predict():
